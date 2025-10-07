@@ -2,7 +2,7 @@ NAME = libft.a
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra #-Werror
 
 INCDIR = .
 
@@ -22,22 +22,41 @@ SRCS =	$(SRCDIR)/ft_atoi.c $(SRCDIR)/ft_strdup.c\
 		$(SRCDIR)/ft_strrchr.c $(SRCDIR)/ft_strncmp.c\
 		$(SRCDIR)/ft_memchr.c $(SRCDIR)/ft_memcmp.c\
 		$(SRCDIR)/ft_strnstr.c $(SRCDIR)/ft_substr.c\
-		$(SRCDIR)/ft_strtrim.c
+		$(SRCDIR)/ft_strtrim.c $(SRCDIR)/ft_strmapi.c\
+		$(SRCDIR)/ft_striteri.c $(SRCDIR)/ft_putchar_fd.c\
+		$(SRCDIR)/ft_putstr_fd.c $(SRCDIR)/ft_putendl_fd.c\
+		$(SRCDIR)/ft_putnbr_fd.c\
+
+B_SRCS =	$(SRCDIR)/ft_lstnew.c $(SRCDIR)/ft_lstadd_front.c\
+			$(SRCDIR)/ft_lstlast.c $(SRCDIR)/ft_lstsize.c\
+			$(SRCDIR)/ft_lstadd_back.c $(SRCDIR)/ft_lstdelone.c\
+			$(SRCDIR)/ft_lstclear.c $(SRCDIR)/ft_lstiter.c\
+			$(SRCDIR)/ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
+
+B_OBJS = $(B_SRCS:.c=.o)
 
 .PHONY: all
 all: $(NAME) clean
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJS) $(B_OBJS)
+	ar rcs $(NAME) $(OBJS) $(B_OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -I $(INCDIR) -c $(<) -o $(@)
 
+.PHONY: bonus
+bonus: $(OBJS) $(B_OBJS)
+	ar rcs $(NAME) $(OBJS) $(B_OBJS)
+	ranlib $(NAME)
+
+%.o : %.c
+	$(CC) $(CFLAGS) -I $(INCDIR) -c $(<) -o $(@)
+
 .PHONY: clean
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(B_OBJS)
 
 .PHONY: fclean
 fclean: clean
