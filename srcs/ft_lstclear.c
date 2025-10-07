@@ -6,7 +6,7 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 22:37:34 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/07 12:41:50 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 14:16:11 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void rec_tofree(t_list *look_list, void (*del)(void *))
 {
-	printf("\nIN!!\n");
 	if(look_list->next == NULL)
 	{
 		if(look_list->content != NULL)
@@ -43,18 +42,3 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
 	rec_tofree(*lst, del);
 	(*lst) = NULL;
 }
-#include "libft.h"
-
-// void	ft_lstclear(t_list **lst, void (*del)(void*))
-// {
-// 	t_list	*node;
-
-// 	if (!lst)
-// 		return ;
-// 	while (*lst)
-// 	{
-// 		node = (*lst)->next;
-// 		ft_lstdelone(*lst, del);
-// 		*lst = node;
-// 	}
-// }
