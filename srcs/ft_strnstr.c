@@ -6,11 +6,11 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 21:19:44 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 10:58:13 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 16:52:05 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char *ft_strnstr(char *s, char *c, size_t n)
 {

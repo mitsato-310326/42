@@ -6,11 +6,11 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:07:15 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 17:29:01 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 17:03:55 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 // char setp(unsigned int t, char c)
 // {

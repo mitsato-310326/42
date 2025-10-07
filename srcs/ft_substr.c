@@ -6,13 +6,13 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 11:20:16 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 11:37:54 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 17:02:56 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../libft.h"
 
 char *ft_subcharset(char const *str, int size)
 {

@@ -6,15 +6,14 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 23:29:55 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/07 14:08:36 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 17:04:46 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-t_list *ft_lstcpy(t_list *dst, t_list *src, void *(*f)(void *), void (*del)(void *), int flag)
+t_list *ft_lstcpy(t_list *dst, t_list *src, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *tmp;
 	if(src->next == NULL)
 	{
 		(dst) = ft_lstnew(f(src->content));
@@ -33,7 +32,7 @@ t_list *ft_lstcpy(t_list *dst, t_list *src, void *(*f)(void *), void (*del)(void
 			ft_lstclear(&dst, del);
 			return(NULL);
 		}
-		(dst)->next = ft_lstcpy((dst)->next, src->next, f, del, 1);
+		(dst)->next = ft_lstcpy((dst)->next, src->next, f, del);
 		return(dst);
 	}
 }
@@ -53,7 +52,7 @@ void (*del)(void *))
 		ft_lstclear(&dst, del);
 		return(NULL);
 	}
-	dst->next = ft_lstcpy(&dst, lst->next, f, del, 0);
+	dst->next = ft_lstcpy(&dst, lst->next, f, del);
 	if(ft_lstsize(dst) != ft_lstsize(lst))
 		return(NULL);
 	return(dst);

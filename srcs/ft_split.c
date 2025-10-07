@@ -6,13 +6,13 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:10:33 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 12:01:33 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 17:02:06 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "libft.h"
+#include "../libft.h"
 
 char *ft_strsizedup(char* str, int size)
 {

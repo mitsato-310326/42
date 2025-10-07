@@ -6,11 +6,9 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 19:49:31 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/05 20:01:16 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 16:51:46 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char *ft_strchr(char *s, char c)
 {

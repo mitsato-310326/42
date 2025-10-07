@@ -6,11 +6,9 @@
 /*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:29:55 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 17:45:49 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/07 16:53:02 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
