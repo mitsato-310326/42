@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 12:03:17 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/05 12:17:51 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 11:02:06 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
+#include "../libft.h"
 
 void *ft_memcpy(char *dest, const char *src, size_t n)
 {

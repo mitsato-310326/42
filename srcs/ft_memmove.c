@@ -3,23 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 14:33:05 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/05 14:50:29 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 11:02:24 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
-
-int ft_strlen(const unsigned char* str)
-{
-	int i = 0;
-	while(*str++)
-		++i;
-	return(i);
-}
+#include "../libft.h"
 
 void *ft_memmove(char *dest, const char *src, size_t n)
 {

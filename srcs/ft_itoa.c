@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:29:35 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/04 13:06:12 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 10:58:42 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
-#include <stdlib.h>
+#include "../libft.h"
 
 char *swap_ascii(char *str, int size_plus_one)
 {

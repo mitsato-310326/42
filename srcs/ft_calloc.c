@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 20:55:19 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/04 10:51:44 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 10:58:09 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdint.h>
+#include "../libft.h"
 
 void *ft_calloc(size_t nmemb, size_t size)
 {

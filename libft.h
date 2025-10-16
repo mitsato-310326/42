@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 19:57:46 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 23:39:15 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 11:04:21 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdint.h>
+#include <stddef.h>
 
 typedef struct	s_list
 {

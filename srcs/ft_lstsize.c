@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 21:49:33 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 21:57:21 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 10:59:03 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,6 @@
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdlib.h>
-
-// t_list *set_new(void *content, t_list *look_list)
-// {
-// 	look_list->content = content;
-// 	look_list->next = NULL;
-// 	return(look_list);
-// }
 
 int rec_new(t_list *look_list, int count)
 {

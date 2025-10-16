@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 18:00:45 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/06 18:14:37 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 11:03:11 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-// #include "../includes/libft.h"
+#include "../libft.h"
 
 void ft_putchar_fd(char c, int fd)
 {
