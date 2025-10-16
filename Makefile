@@ -2,7 +2,7 @@ NAME = libft.a
 
 CC = cc
 
-CFLAGS = -Wall -Wextra #-Werror
+CFLAGS = -Wall -Wextra -Werror
 
 INCDIR = .
 
@@ -15,7 +15,7 @@ SRCS =	$(SRCDIR)/ft_atoi.c $(SRCDIR)/ft_strdup.c\
 		$(SRCDIR)/ft_isalnum.c $(SRCDIR)/ft_isascii.c\
 		$(SRCDIR)/ft_calloc.c $(SRCDIR)/ft_isprint.c\
 		$(SRCDIR)/ft_itoa.c $(SRCDIR)/ft_memcpy.c\
-		$(SRCDIR)/ft_memccpy.c $(SRCDIR)/ft_memset.c\
+		$(SRCDIR)/ft_memset.c\
 		$(SRCDIR)/ft_memmove.c $(SRCDIR)/ft_strlcpy.c\
 		$(SRCDIR)/ft_strlcat.c $(SRCDIR)/ft_toupper.c\
 		$(SRCDIR)/ft_tolower.c $(SRCDIR)/ft_strchr.c\

@@ -6,16 +6,18 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:46:17 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 11:03:21 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:23:38 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	size_t i = 0;
-	while(s[i++])
+	size_t	i;
+
+	i = 0;
+	while (s[i++])
 		;
 	write(fd, s, i);
 }

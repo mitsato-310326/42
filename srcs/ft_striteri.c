@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:29:55 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/07 16:53:02 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:40:05 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i = 0;
-	while(s[i])
+	int	i;
+
+	i = 0;
+	while (s[i])
 	{
 		(f)(i, &s[i]);
 		++i;
@@ -23,5 +25,5 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
 // int main(void)
 // {
 // 	void
-// 	return 0;
+// 	return (0);
 // }

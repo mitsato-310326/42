@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 19:42:11 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/05 19:47:31 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:40:43 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_tolower(char look)
+char	ft_tolower(int c)
 {
-	if (look >= 'A' && look <= 'Z')
-		look += 32;
-	return(look);
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }

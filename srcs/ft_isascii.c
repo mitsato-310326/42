@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 21:27:22 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/03 20:45:03 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:22:15 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int look)
+int	ft_isascii(int c)
 {
-	return (look >= 0 && look <= 127);
+	return (c >= 0 && c <= 127);
 }

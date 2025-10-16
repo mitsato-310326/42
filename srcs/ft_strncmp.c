@@ -6,21 +6,23 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 20:22:22 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 11:04:03 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 13:21:19 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t i = 0;
+	size_t	i;
+
+	i = 0;
 	if (n == 0)
-		return(0);
-	while(*s1 == *s2 && ++i < n)
+		return (0);
+	while (*s1 == *s2 && ++i < n)
 	{
 		++s1;
 		++s2;
 	}
-	return(*s1 - *s2);
+	return (*s1 - *s2);
 }

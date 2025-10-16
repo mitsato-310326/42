@@ -6,22 +6,22 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 21:58:17 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 10:58:54 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:22:51 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-t_list *search_last(t_list *look_list)
+t_list	*search_last(t_list *look_list)
 {
-	if(look_list->next == NULL)
-		return(look_list);
-	return(search_last(look_list->next));
+	if (look_list->next == NULL)
+		return (look_list);
+	return (search_last(look_list->next));
 }
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if(!lst)
-		return 0;
-	return(search_last(lst));
+	if (!lst)
+		return (0);
+	return (search_last(lst));
 }

@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 21:27:22 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/03 20:32:32 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:22:00 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char look)
+int	ft_isalnum(int c)
 {
-	return ((look >= 'a' && look <= 'z') || (look >= 'A' && look <= 'Z') || (look >= '0' && look <= '9'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0'
+			&& c <= '9'));
 }

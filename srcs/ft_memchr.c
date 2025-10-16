@@ -6,22 +6,22 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 20:40:00 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 11:00:56 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:23:09 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char *ft_memchr(char *s, char c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i = 0;
-		// c = c % 256;
-	while(s[i] != c && i < n)
+	size_t	i;
+
+	i = 0;
+	while (((char *)s)[i] != (unsigned char)c && i < n)
 	{
-		// ++s;
 		++i;
 	}
-	if((!s[i] && c != 0) || n == i)
-		return 0;
-	return(s + i);
+	if ((!((char *)s)[i] && (unsigned char)c != 0) || n == i)
+		return (0);
+	return ((void *)s + i);
 }

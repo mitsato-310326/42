@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 19:42:11 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/05 19:44:23 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:40:45 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_toupper(char look)
+char	ft_toupper(int c)
 {
-	if (look >= 'a' && look <= 'z')
-		look -= 32;
-	return(look);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }

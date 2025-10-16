@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 21:27:22 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/03 20:31:43 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 12:24:35 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char look)
+int	ft_isdigit(int c)
 {
-	return (look >= '0' && look <= '9');
+	return (c >= '0' && c <= '9');
 }

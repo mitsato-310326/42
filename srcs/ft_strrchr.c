@@ -3,26 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 19:49:31 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/07 16:51:28 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:40:30 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strrchr(char *s, char c)
+char	*ft_strrchr(const char *s, int c)
 {
-	// c = c % 256;
-	if(!*s && c != 0)
-		return 0;
-	while(*s)
+	if (!*s && (unsigned char)c != 0)
+		return (0);
+	while (*s)
 		++s;
-	if(c == 0)
-		return (s);
+	if ((unsigned char)c == 0)
+		return ((char *)s);
 	--s;
-	while(*s && *s != c)
+	while (*s && *s != (unsigned char)c)
 		--s;
-	if(!*s)
-		return 0;
-	return(s);
+	if (!*s)
+		return (0);
+	return ((char *)s);
 }

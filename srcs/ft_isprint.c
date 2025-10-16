@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 21:27:22 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/04 11:09:56 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:41:23 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char look)
+int	ft_isprint(int c)
 {
-	return (look >= 32 && look != 127);
+	return (c >= 32 && c != 127);
 }

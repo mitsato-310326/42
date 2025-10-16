@@ -6,13 +6,13 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:46:17 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 11:02:44 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:23:31 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
 }

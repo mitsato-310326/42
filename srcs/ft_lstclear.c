@@ -3,37 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 22:37:34 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/07 14:16:11 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:22:44 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void rec_tofree(t_list *look_list, void (*del)(void *))
+void	rec_tofree(t_list *look_list, void (*del)(void *))
 {
-	if(look_list->next == NULL)
+	if (look_list->next == NULL)
 	{
-		if(look_list->content != NULL)
+		if (look_list->content != NULL)
 			del(look_list->content);
 		free(look_list);
 	}
 	else
 	{
 		rec_tofree(look_list->next, del);
-		if(look_list->content != NULL)
+		if (look_list->content != NULL)
 			del(look_list->content);
 		free(look_list);
 	}
 }
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if(!lst)
-		return;
-	if(!(*lst)->next)
+	if (!lst)
+		return ;
+	if (!(*lst)->next)
 	{
 		del((*lst)->content);
 		free(*lst);

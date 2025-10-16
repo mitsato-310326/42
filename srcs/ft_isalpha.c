@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 21:27:22 by mitsato           #+#    #+#             */
-/*   Updated: 2025/09/30 21:33:44 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:41:18 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char look)
+int	ft_isalpha(int c)
 {
-	return ((look >= 'a' && look <= 'z') || (look >= 'A' && look <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

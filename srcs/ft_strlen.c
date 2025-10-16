@@ -3,24 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mitsato <mitsato@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:10:33 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/02 09:10:36 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:40:14 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char* str)
-{
-	int i = 0;
-	while(*str++)
-		++i;
-	return(i);
-}
+#include "../libft.h"
 
-// int main(void)
-// {
-// 	char sprite[] = "Hi! my name is true!";
-// 	char split[] = " !,";
-// 	return(0);
-// }
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (*s++)
+		++i;
+	return (i);
+}

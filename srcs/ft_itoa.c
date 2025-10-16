@@ -6,64 +6,67 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:29:35 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 10:58:42 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 14:22:29 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char *swap_ascii(char *str, int size_plus_one)
+char	*swap_ascii(char *str, int size_plus_one)
 {
-	while(size_plus_one > 0)
+	while (size_plus_one > 0)
 	{
 		str[size_plus_one] = str[size_plus_one - 1];
 		--size_plus_one;
 	}
-	return(str);
+	return (str);
 }
 
-char *set_ascii(int nbr, int count, int *size){
-	char *ascii;
-	if(-nbr < 10)
+char	*set_ascii(int nbr, int count, int *size)
+{
+	char	*ascii;
+
+	if (nbr > -10)
 	{
-		ascii = malloc((count + 2)*sizeof(char));
-		*size  = count;
+		ascii = malloc((count + 2) * sizeof(char));
+		*size = count;
 		ascii[*size - count] = '0' - nbr;
 		ascii[count + 1] = '\0';
-		return(ascii);
+		return (ascii);
 	}
 	else
 	{
 		ascii = set_ascii(nbr / 10, count + 1, size);
 		ascii[*size - count] = '0' - (nbr % 10);
-		return(ascii);
+		return (ascii);
 	}
 }
 
-char *ft_itoa(int nbr)
+char	*ft_itoa(int n)
 {
-	int a;
-	char *ascii;
-	if (nbr >= 0)
+	int		a;
+	char	*ascii;
+
+	if (n >= 0)
 	{
-		nbr = -nbr;
-		ascii = set_ascii(nbr, 0, &a);
+		n = -n;
+		ascii = set_ascii(n, 0, &a);
 	}
 	else
 	{
-		ascii = set_ascii(nbr, 1, &a);
+		ascii = set_ascii(n, 1, &a);
 		ascii = swap_ascii(ascii, a);
 		ascii[0] = '-';
 	}
 	return (ascii);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
 // int	main(void)
 // {
 // 	// printf("%d\n", ft_itoa("9223372036854775809"));
-// 	printf("%s\n", ft_itoa(-12345));
+// 	printf("%s\n", ft_itoa(INT_MIN));
 // 	// char str[256];
 
 // 	// sprintf(str, "%d", 12345);

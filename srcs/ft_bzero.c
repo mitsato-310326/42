@@ -6,17 +6,20 @@
 /*   By: mitsato <mitsato@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 19:36:04 by mitsato           #+#    #+#             */
-/*   Updated: 2025/10/16 10:57:42 by mitsato          ###   ########.fr       */
+/*   Updated: 2025/10/16 12:28:18 by mitsato          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 
-void ft_bzero(char *s, int n)
+void	ft_bzero(void *s, size_t n)
 {
-	int i = 0;
+	size_t	i;
+
+	i = 0;
 	while (n > i)
 	{
-		s[i] = '\0';
+		((char *)s)[i] = '\0';
 		++i;
 	}
 }
